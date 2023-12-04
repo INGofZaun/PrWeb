@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registros PGS</title>
+    <link rel="stylesheet" href="estilos/stylesRegistrosPGS.css">
+</head>
+<body>
+    <div class="top-section">
+        <div class="sub-section" style="height: 20%; background-color: #f2f2f2;">
+            <label for="campo1">No.Cuenta:</label>
+            <input type="text" id="campo1" name="campo1" >
+
+            <label for="campo2">Usuario:</label>
+            <input type="text" id="campo2" name="campo2" placeholder="Ingrese su Usuario">
+        </div>
+
+        <div class="sub-section" style="height: 20%; background-color: #e6e6e6;">
+            <label for="campo3">Servicio:</label>
+            <input type="text" id="campo3" name="campo3" >
+
+            <label for="campo4">Espacio/Computadora/Equipo:</label>
+            <input type="text" id="campo4" name="campo4" >
+            <label for="campo5">Fecha:</label>
+            <input type="text" id="campo5" name="campo5" >
+
+            <label for="campo6">Hora:</label>
+            <input type="text" id="campo6" name="campo6">
+        </div>
+    </div>
+    <div class="bottom-section">
+        <div class="left-section">
+            <label for="cuentaLabel">Cuenta:</label>
+            <input type="text" id="cuentaLabel" name="cuentaLabel" readonly>
+            <button class="accept-button">Aceptar</button>
+            <button class="cancel-button" onclick="window.history.back()">Cancelar</button>
+        </div>
+        <div class="right-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Encabezado Derecho 1</th>
+                        <th>Encabezado Derecho 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                    </tr>
+                    <!-- Puedes agregar más filas según sea necesario -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="bottom-buttons">
+        <button class="accept-button">Aceptar</button>
+        <button class="cancel-button" onclick="window.history.back()">Cancelar</button>
+    </div>
+</body>
+</html>
+

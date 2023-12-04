@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+.top-section {
+    height: 40vh; /* 40% de la altura visible del viewport */
+    background-color: #f2f2f2; /* Puedes cambiar el color de fondo según tus preferencias */
+}
+
+.bottom-section {
+    height: 60vh; /* 60% de la altura visible del viewport */
+    background-color: #e6e6e6; /* Puedes cambiar el color de fondo según tus preferencias */
+}

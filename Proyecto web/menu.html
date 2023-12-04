@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="estilos/stylesMenu.css">
+</head>
+
+<body>
+    <div>
+        <button class="dropdown-btn">Préstamos</button>
+        <div class="dropdown-content">
+            <a href="PGS.html" id="prestamosGrupalesLink">Prestamos grupales</a>
+        </div>
+    </div>
+
+    <div> <button class="dropdown-btn">Acceso General</button>
+        <div class="dropdown-content">
+            <a href="Acceso General/AccesoGral.html">Acceso a sala general</a>
+        </div>
+    </div>
+
+    <div>
+        <button class="dropdown-btn">Informes</button>
+        <div class="dropdown-content">
+            <a href="#">Por área</a>
+            <a href="#">Por área y servicio (informe)</a>
+            <a href="#">Por usuario</a>
+            <a href="#">General</a>
+        </div>
+    </div>
+    <div>
+        <button class="dropdown-btn">Configuración</button>
+        <div class="dropdown-content">
+            <a href="#">Configuración de parámetros</a>
+        </div>
+    </div>
+
+    <div>
+        <button class="dropdown-btn">Ventana</button>
+        <div class="dropdown-content">
+            <a href="#">Cascada</a>
+            <a href="#">Mosaico virtual</a>
+            <a href="#">Mosaico horizontal</a>
+            <a href="#">Cerrar todo</a>
+            <a href="#">Organizar iconos</a>
+        </div>
+    </div>
+
+    <div>
+        <button class="dropdown-btn">Ayuda</button>
+        <div class="dropdown-content">
+            <a href="#">Contenido Ctrl+F1</a>
+            <a href="#">Acerca de...</a>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const botones = document.querySelectorAll(".dropdown-btn");
+            for (let index = 0; index < botones.length; index++) {
+                botones[index].addEventListener('click', function (event) {
+                    debugger;
+                    this.parentElement.children[1].style.display = 'block';
+                });
+
+            }
+            const prestamosGrupalesLink = document.getElementById('prestamosGrupalesLink');
+
+
+        });
+    </script>
+</body>
+
+</html>
